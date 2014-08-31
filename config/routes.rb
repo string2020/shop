@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  namespace :admin do
+  get 'cms/login'
+  end
+
+  namespace :admin do
+  get 'cms/query'
+  end
+
+  namespace :admin do
+  get 'cms/show'
+  end
+
   get 'book/show'
 
   get 'book/list'
